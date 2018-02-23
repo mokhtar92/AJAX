@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Chat Window</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body onload="setInterval('getChatMessages()', 1500);">
+        <div align="center">
+            <br/><br/><br/>
+            Enter your message:<input type="text" name="msg" id="msg"/> 
+            <input type="button" value="Send" id="sendBtn"/>  
+            <input type="button" value="Sign out" id="signOutBtn"/>
+            <h1>Chat Messages</h1>
+            <br/><br/>
+        </div>
+
+        <br/><br/>
+
+        <div align="center" style="float: left; margin-right: 500px; margin-left: 200px;" >
+            <table id="messagesTable">
+            </table>
+        </div>
+
+        <div  align="center" style="float: left;">
+            <table id="statusOfUsers">
+            </table>
+        </div>
+    </body>
+</html>
